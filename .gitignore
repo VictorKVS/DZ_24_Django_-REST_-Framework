@@ -1,0 +1,34 @@
+$gitignore = @"
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+venv/
+.venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# Django
+db.sqlite3
+db.sqlite3-journal
+*.log
+local_settings.py
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+"@
+
+Set-Content -Path ".gitignore" -Value $gitignore -Encoding UTF8
+Write-Host "✅ .gitignore создан!" -ForegroundColor Green
