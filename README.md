@@ -33,7 +33,7 @@ python -m venv venv
 venv\Scripts\activate  # Windows
 # source venv/bin/activate  # Linux/macOS
 pip install django djangorestframework drf-spectacular
-
+```
 2. Миграции и запуск
 
 python manage.py migrate
